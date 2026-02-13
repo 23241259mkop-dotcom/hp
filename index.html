@@ -21,7 +21,10 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#" class="brand">ChronoCast</a>
+        <a href="#" class="brand">
+          <span class="brand-mark">CC</span>
+          <span class="brand-text">ChronoCast</span>
+        </a>
         <button
           class="menu-toggle"
           aria-expanded="false"
@@ -34,221 +37,223 @@
         </button>
         <nav id="global-nav" class="global-nav" aria-label="グローバルナビゲーション">
           <ul>
+            <li><a href="#services">当社のサービス</a></li>
+            <li><a href="#why-us">Why ChronoCast?</a></li>
             <li><a href="#about">私たちについて</a></li>
-            <li><a href="#services">事業内容</a></li>
-            <li><a href="#mission">Mission / Vision</a></li>
-            <li><a href="#recruit">採用情報</a></li>
+            <li><a href="#cases">ご支援事例</a></li>
+            <li><a href="#news">お知らせ</a></li>
             <li><a href="#company">会社情報</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
           </ul>
+          <a class="header-contact mobile-only" href="#contact">お問い合わせ・資料請求</a>
         </nav>
+        <a class="header-contact desktop-only" href="#contact">お問い合わせ・資料請求</a>
       </div>
     </header>
 
     <main id="main-content">
       <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">ChronoCast Inc.</p>
-            <h1>AI時代に「エンジニア」を再定義する。</h1>
-            <p class="lead">
-              技術と経営の両方を理解し、研究で終わらせずビジネス価値を生み出すまでやり抜く。
-              株式会社クロノキャストは、少数精鋭のテックカンパニーです。
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact">お問い合わせ</a>
-              <a class="btn btn-secondary" href="#services">サービスを見る</a>
+        <div class="container hero-inner">
+          <p class="hero-logo">ChronoCast</p>
+          <p class="hero-company">(株) ChronoCast</p>
+          <h1>
+            AI時代に「エンジニア」を再定義する<br />
+            技術と経営をつなぎ、ビジネス価値を創る
+          </h1>
+          <p class="hero-sub">
+            技術がわかる。経営もわかる。研究で終わらせず、実装・運用まで責任を持って伴走します。
+          </p>
+        </div>
+      </section>
+
+      <section class="support-strip">
+        <div class="container">
+          <p class="section-kicker">ご支援先（一部）</p>
+          <ul class="support-logos">
+            <li>放送・メディア</li>
+            <li>製造業</li>
+            <li>建設業</li>
+            <li>物流業</li>
+            <li>小売業</li>
+            <li>スタートアップ</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" class="section section-dark">
+        <div class="container">
+          <h2>当社のサービス</h2>
+
+          <div class="service-block">
+            <div class="service-heading">
+              <h3>AIプロダクト / DX支援</h3>
+              <p>
+                業界特有のデータや業務フローを踏まえた、カスタマイズ可能なAIソリューションを提供します。
+              </p>
+            </div>
+
+            <div class="service-cards">
+              <article class="service-card">
+                <h4>放送とエンタメのDX</h4>
+                <p>レガシー連携・リアルタイム処理・高信頼性要件に対応した放送DXを推進。</p>
+                <a href="#contact">詳しく見る</a>
+              </article>
+              <article class="service-card">
+                <h4>製造業や建築のAI</h4>
+                <p>図面認識AI、現場データ活用、検査自動化など業務に直結するAI実装を支援。</p>
+                <a href="#contact">詳しく見る</a>
+              </article>
+              <article class="service-card">
+                <h4>AI活用コンサルティング</h4>
+                <p>経営・財務の視点も踏まえ、投資対効果まで見据えたAI導入を設計。</p>
+                <a href="#contact">詳しく見る</a>
+              </article>
+              <article class="service-card">
+                <h4>内製開発支援・AI研修</h4>
+                <p>RAG構築、プロンプト設計、設計レビューを通じて内製化を伴走支援。</p>
+                <a href="#contact">詳しく見る</a>
+              </article>
             </div>
           </div>
-          <div class="stats" aria-label="実績データ">
-            <article>
-              <p class="stat-number">3</p>
-              <p class="stat-label">事業領域（放送DX / 製造建築AI / 人材・AIコンサル）</p>
+
+          <div class="tailor-box">
+            <h3>テーラーメイドAI開発</h3>
+            <p>
+              業界・トピックを問わず、課題定義から実装、保守運用まで一気通貫でご支援します。
+              「経営×AI」の視点で、利益創出に直結するAI実装を行います。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us" class="section section-dark">
+        <div class="container">
+          <h2>Why ChronoCast?</h2>
+          <p class="section-text">
+            技術と経営の両方を理解したチームが、各社固有の業務にカスタマイズして
+            「そのまま使える」AIを提供します。
+          </p>
+          <div class="why-grid">
+            <article class="why-card">
+              <h3>研究から実装まで</h3>
+              <p>画像認識・自然言語処理の研究成果を、現場で動くシステムとして実装します。</p>
             </article>
-            <article>
-              <p class="stat-number">E2E</p>
-              <p class="stat-label">AI研究から実装・運用まで一気通貫で支援</p>
+            <article class="why-card">
+              <h3>現役エンジニアが伴走</h3>
+              <p>設計レビュー、開発、運用改善まで同じチームで継続支援します。</p>
             </article>
-            <article>
-              <p class="stat-number">40万+</p>
-              <p class="stat-label">採用情報: 月給40万円以上保証</p>
+            <article class="why-card">
+              <h3>経営視点での意思決定</h3>
+              <p>ROIや投資回収期間を踏まえて、実行可能なロードマップを策定します。</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container">
+      <section id="about" class="section about-band">
+        <div class="container about-inner">
           <h2>私たちについて</h2>
-          <p class="section-text">
-            ChronoCastは、技術と経営の両方を理解し、真のビジネス価値を創造する
-            プロフェッショナル集団です。研究成果を実装・運用まで責任を持って形にし、
-            お客様の成功にコミットします。
+          <p class="about-lead">建設・製造・放送の現場課題を、AIと実装力で解決する。</p>
+          <p>
+            ChronoCastは、AI時代において技術と経営の両方を理解し、真のビジネス価値を創造する
+            プロフェッショナル集団です。少数精鋭のチームで、お客様の成功にコミットします。
           </p>
-          <div class="feature-grid">
-            <article class="card">
-              <h3>技術と経営の架け橋</h3>
-              <p>技術だけ、経営だけではなく、両方の視点で意思決定と実行を支援します。</p>
-            </article>
-            <article class="card">
-              <h3>研究から実装・運用まで</h3>
-              <p>画像認識・自然言語処理の研究開発から現場導入まで、エンドツーエンドで提供します。</p>
-            </article>
-            <article class="card">
-              <h3>現役エンジニアによる実行力</h3>
-              <p>GitHubのコードレビューや技術面談を通じて、実装力まで見極めるチームです。</p>
-            </article>
-          </div>
         </div>
       </section>
 
-      <section id="services" class="section section-alt">
+      <section id="cases" class="section section-dark">
         <div class="container">
-          <h2>事業内容</h2>
-          <p class="section-text">
-            3つの事業領域で、AI技術を活用したソリューションを提供します。
-          </p>
-          <div class="service-grid">
-            <article class="card service-card">
-              <h3>放送とエンタメのDX</h3>
-              <p>
-                放送業界の要件を深く理解し、レガシー連携・リアルタイム処理・高信頼性要求に対応。
-                放送DXと制作ワークフロー自動化を推進します。
-              </p>
-              <ul class="chip-list">
-                <li>放送DX</li>
-                <li>業務ワークフロー自動化</li>
-                <li>次世代放送システム構築</li>
-              </ul>
+          <h2>ご支援事例（一部）</h2>
+          <div class="case-list">
+            <article class="case-card">
+              <h3>製造業A社 / 図面照合の自動化</h3>
+              <div class="case-row">
+                <span class="case-label">Issue</span>
+                <p>設計変更時の差分確認が人手中心で、確認漏れが発生していた。</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Solution</span>
+                <p>図面比較AIを導入し、変更点の抽出と通知を自動化。確認工数を大幅に削減。</p>
+              </div>
             </article>
-            <article class="card service-card">
-              <h3>製造業や建築のAI</h3>
-              <p>
-                図面認識AI、製造業DX、建設業DXを通じて、現場の安全性と生産性を同時に向上。
-                既製品では対応困難な複雑要件にも対応します。
-              </p>
-              <ul class="chip-list">
-                <li>図面認識AI</li>
-                <li>製造業DX</li>
-                <li>建設業DX</li>
-              </ul>
+            <article class="case-card">
+              <h3>放送業B社 / ワークフロー最適化</h3>
+              <div class="case-row">
+                <span class="case-label">Issue</span>
+                <p>番組制作フローに手作業が多く、リードタイムが長期化していた。</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Solution</span>
+                <p>メタデータ処理を自動化し、制作工程の連携を強化。運用負荷と待ち時間を短縮。</p>
+              </div>
             </article>
-            <article class="card service-card">
-              <h3>人材採用＆AI活用コンサルティング</h3>
-              <p>
-                エンジニア人材紹介、AI活用コンサルティング、内製開発支援・AI研修を提供。
-                スタートアップの成長を技術と経営の両面からサポートします。
-              </p>
-              <ul class="chip-list">
-                <li>エンジニア人材紹介</li>
-                <li>AI活用コンサルティング</li>
-                <li>内製開発支援・AI研修</li>
-              </ul>
+            <article class="case-card">
+              <h3>建設業C社 / 現場AI活用</h3>
+              <div class="case-row">
+                <span class="case-label">Issue</span>
+                <p>報告書作成と情報共有に時間がかかり、現場判断が遅れることがあった。</p>
+              </div>
+              <div class="case-row">
+                <span class="case-label">Solution</span>
+                <p>現場データ入力を標準化し、AIで要約・可視化。意思決定のスピードを改善。</p>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="mission" class="section">
+      <section id="recruit" class="recruit-cta">
+        <div class="container recruit-inner">
+          <p>ChronoCastでは、傑出したエンジニア・コンサルメンバーを募集しています。</p>
+          <a href="#contact">採用情報</a>
+        </div>
+      </section>
+
+      <section id="news" class="section section-light">
         <div class="container">
-          <h2>Mission / Vision / Value</h2>
-          <div class="works-list mission-grid">
-            <article class="card">
-              <h3>Mission</h3>
-              <p>技術と経営の架け橋になる。</p>
+          <h2>お知らせ・記事</h2>
+          <div class="news-grid">
+            <article class="news-card">
+              <time datetime="2026-02-01">2026.02.01</time>
+              <h3>コーポレートサイトをリニューアルしました</h3>
+              <p>デザイン刷新と情報整理を実施し、サービス情報への導線を改善しました。</p>
             </article>
-            <article class="card">
-              <h3>Vision</h3>
-              <p>「コードを書く人」から「ビジネス価値を生み出す人」へ。エンジニアの新しい定義をつくる。</p>
+            <article class="news-card">
+              <time datetime="2026-01-15">2026.01.15</time>
+              <h3>AI活用コンサルティングの提供領域を拡大</h3>
+              <p>業務自動化、RAG構築、運用改善までの支援メニューを強化しました。</p>
             </article>
-            <article class="card">
-              <h3>Value</h3>
-              <p>研究成果を実装・運用まで落とし込み、ビジネス価値を生み出すまで責任を持つ。</p>
+            <article class="news-card">
+              <time datetime="2025-12-10">2025.12.10</time>
+              <h3>採用ページを公開しました</h3>
+              <p>募集職種や働き方、成長支援制度の情報を掲載しています。</p>
             </article>
+          </div>
+          <div class="news-actions">
+            <a href="#contact">もっと見る</a>
           </div>
         </div>
       </section>
 
-      <section id="recruit" class="section section-alt">
-        <div class="container">
-          <h2>採用情報</h2>
-          <p class="section-text">
-            AI技術でビジネス価値を創造するプロフェッショナルチームへ。
-            技術を手段として捉え、課題解決にコミットできる仲間を募集しています。
-          </p>
-          <div class="recruit-highlight card">
-            <p class="stat-number">月給40万円以上保証</p>
-            <p class="stat-label">24歳で年収1000万円の社員も在籍（経験・スキル・成果に応じて決定）</p>
-          </div>
-          <div class="feature-grid">
-            <article class="card">
-              <h3>募集職種</h3>
-              <p>CTO候補 / AI・機械学習エンジニア / フロントエンド / バックエンド / 放送技術エンジニア</p>
-            </article>
-            <article class="card">
-              <h3>想定レンジ</h3>
-              <p>400万円〜700万円 / 800万円〜1,500万円 / 1,500万円〜（上限なし）</p>
-            </article>
-            <article class="card">
-              <h3>支援制度</h3>
-              <p>AIツール・研究費全額補助。継続学習と実践を重視する評価制度を採用しています。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="company" class="section">
-        <div class="container">
-          <h2>会社情報</h2>
-          <div class="company-table-wrap">
-            <table class="company-table">
-              <tbody>
-                <tr>
-                  <th>会社名</th>
-                  <td>株式会社クロノキャスト</td>
-                </tr>
-                <tr>
-                  <th>所在地</th>
-                  <td>〒105-0013 東京都港区浜松町２丁目２番１５号 浜松町ダイヤビル２Ｆ</td>
-                </tr>
-                <tr>
-                  <th>設立年月日</th>
-                  <td>2025年8月12日</td>
-                </tr>
-                <tr>
-                  <th>法人番号</th>
-                  <td>
-                    <a href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7010401192511" target="_blank" rel="noopener noreferrer">
-                      7010401192511
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section section-alt">
-        <div class="container contact-panel">
-          <div>
-            <h2>お問い合わせ</h2>
-            <p class="section-text">
-              サービスに関するご相談やお問い合わせは、お気軽にご連絡ください。
-              内容を確認の上、担当よりご連絡いたします。
+      <section id="contact" class="section contact-section">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <h2>お問い合わせ・資料請求</h2>
+            <p>
+              サービスに関するご相談、お見積り、登壇依頼など、お気軽にご連絡ください。
+              内容を確認のうえ担当者よりご連絡いたします。
             </p>
           </div>
           <form class="contact-form" action="#" method="post">
             <label>
               会社名
-              <input type="text" name="company" required />
+              <input type="text" name="company" />
             </label>
             <label>
-              お名前
+              お名前 *
               <input type="text" name="name" required />
             </label>
             <label>
-              メールアドレス
+              メールアドレス *
               <input type="email" name="email" required />
             </label>
             <label>
@@ -256,7 +261,7 @@
               <input type="tel" name="phone" />
             </label>
             <label>
-              お問い合わせ内容
+              お問い合わせ内容 *
               <textarea name="message" rows="4" required></textarea>
             </label>
             <button class="btn btn-primary" type="submit">送信する</button>
@@ -266,13 +271,54 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
+    <footer id="company" class="site-footer">
+      <div class="container footer-grid">
+        <section>
+          <h3>企業情報</h3>
+          <dl>
+            <div>
+              <dt>企業名</dt>
+              <dd>株式会社クロノキャスト</dd>
+            </div>
+            <div>
+              <dt>所在地</dt>
+              <dd>〒105-0013 東京都港区浜松町２丁目２番１５号 浜松町ダイヤビル２Ｆ</dd>
+            </div>
+            <div>
+              <dt>設立年月日</dt>
+              <dd>2025年8月12日</dd>
+            </div>
+            <div>
+              <dt>法人番号</dt>
+              <dd>
+                <a
+                  href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7010401192511"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  7010401192511
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section>
+          <h3>メニュー</h3>
+          <nav aria-label="フッターナビゲーション">
+            <a href="#services">当社のサービス</a>
+            <a href="#why-us">Why ChronoCast?</a>
+            <a href="#about">私たちについて</a>
+            <a href="#cases">ご支援事例</a>
+            <a href="#news">お知らせ</a>
+            <a href="#contact">お問い合わせ</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">情報セキュリティ基本方針</a>
+          </nav>
+        </section>
+      </div>
+      <div class="container copyright">
         <p>&copy; <span id="current-year"></span> ChronoCast Inc. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">プライバシーポリシー</a>
-          <a href="#">情報セキュリティ基本方針</a>
-        </div>
       </div>
     </footer>
 

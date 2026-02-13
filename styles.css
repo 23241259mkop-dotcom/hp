@@ -91,6 +91,11 @@ a {
   color: var(--muted);
 }
 
+.global-nav a[aria-current="page"] {
+  color: var(--primary);
+  font-weight: 700;
+}
+
 .global-nav a:hover {
   color: var(--primary);
 }
@@ -341,6 +346,19 @@ h2 {
   border-color: var(--primary);
 }
 
+.form-message {
+  margin: 0.8rem 0 0;
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  background: #e9f2ff;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.recruit-action {
+  margin-top: 1.2rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   background: #fff;
@@ -366,6 +384,35 @@ h2 {
 
 .footer-inner a:hover {
   color: var(--primary);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--primary-dark);
 }
 
 @media (max-width: 960px) {

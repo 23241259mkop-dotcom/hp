@@ -8,6 +8,12 @@
       name="description"
       content="株式会社ネクストビジョンは、DX支援・システム開発・運用保守を通じて、企業の成長を支えるパートナーです。"
     />
+    <meta property="og:title" content="株式会社ネクストビジョン | 企業サイト" />
+    <meta
+      property="og:description"
+      content="DX支援・システム開発・運用保守を通じて、企業の成長を支える株式会社ネクストビジョンの公式サイトです。"
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -32,6 +38,7 @@
             <li><a href="#services">事業内容</a></li>
             <li><a href="#works">導入実績</a></li>
             <li><a href="#company">会社情報</a></li>
+            <li><a href="#recruit">採用情報</a></li>
             <li><a href="#news">ニュース</a></li>
             <li><a href="#contact">お問い合わせ</a></li>
           </ul>
@@ -178,6 +185,33 @@
         </div>
       </section>
 
+      <section id="recruit" class="section">
+        <div class="container">
+          <h2>採用情報</h2>
+          <p class="section-text">
+            ネクストビジョンでは、業務課題に向き合いながら技術で価値を届ける仲間を募集しています。
+            エンジニア・プロジェクトマネージャー・コンサルタントを中心に採用を行っています。
+          </p>
+          <div class="feature-grid">
+            <article class="card">
+              <h3>フルフレックス制度</h3>
+              <p>成果に集中できるよう、働く時間と場所の柔軟性を重視しています。</p>
+            </article>
+            <article class="card">
+              <h3>学習支援制度</h3>
+              <p>資格取得支援、技術書購入補助、社内勉強会で継続成長を支援します。</p>
+            </article>
+            <article class="card">
+              <h3>挑戦を歓迎する文化</h3>
+              <p>新しい提案を歓迎し、職種を越えてプロジェクトに挑戦できます。</p>
+            </article>
+          </div>
+          <div class="recruit-action">
+            <a class="btn btn-secondary" href="#contact">採用について問い合わせる</a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="section section-alt">
         <div class="container contact-panel">
           <div>
@@ -204,6 +238,7 @@
               <textarea name="message" rows="4" required></textarea>
             </label>
             <button class="btn btn-primary" type="submit">送信する</button>
+            <p id="form-message" class="form-message" role="status" aria-live="polite" hidden></p>
           </form>
         </div>
       </section>
@@ -215,6 +250,10 @@
         <a href="#">プライバシーポリシー</a>
       </div>
     </footer>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="ページ上部へ戻る">
+      TOP
+    </button>
 
     <script src="script.js"></script>
   </body>

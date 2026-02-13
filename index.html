@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b1220" />
+
+    <title>株式会社サンプル｜信頼で事業を支える</title>
+    <meta
+      name="description"
+      content="株式会社サンプルは、Web/業務システム開発・DX支援・運用保守を通じて、お客様の事業成長を支えます。"
+    />
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header class="site-header" data-elevate>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="株式会社サンプル ホーム">
+          <img class="brand-mark" src="/assets/logo.svg" width="28" height="28" alt="" />
+          <span class="brand-name">株式会社サンプル</span>
+        </a>
+
+        <nav class="site-nav" aria-label="サイト内ナビゲーション">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-panel"
+            data-nav-toggle
+          >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">メニューを開閉</span>
+          </button>
+
+          <div id="nav-panel" class="nav-panel" data-nav-panel>
+            <a class="nav-link" href="#about">会社概要</a>
+            <a class="nav-link" href="#services">事業内容</a>
+            <a class="nav-link" href="#works">実績</a>
+            <a class="nav-link" href="#news">お知らせ</a>
+            <a class="nav-link" href="#recruit">採用</a>
+            <a class="nav-link nav-cta" href="#contact">お問い合わせ</a>
+            <button class="theme-toggle" type="button" data-theme-toggle>
+              <span class="theme-toggle-label" aria-hidden="true">表示</span>
+              <span class="theme-toggle-state" data-theme-state>自動</span>
+              <span class="sr-only">テーマを切り替える</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">DX / 開発 / 運用</p>
+            <h1 class="hero-title">
+              信頼で事業を支える、
+              <span class="hero-em">伴走型</span>のテクノロジーパートナー
+            </h1>
+            <p class="hero-lead">
+              要件整理から設計・開発・保守まで。スピードと品質を両立し、成果につながるシステムを提供します。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">無料相談する</a>
+              <a class="button ghost" href="#services">サービスを見る</a>
+            </div>
+            <ul class="hero-badges" aria-label="強み">
+              <li class="badge">最短2週間でPoC</li>
+              <li class="badge">セキュア設計</li>
+              <li class="badge">運用まで一貫</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="提供価値の概要">
+            <div class="hero-card-inner">
+              <div class="metric">
+                <div class="metric-num">98%</div>
+                <div class="metric-label">継続率（例）</div>
+              </div>
+              <div class="metric">
+                <div class="metric-num">24h</div>
+                <div class="metric-label">一次対応（例）</div>
+              </div>
+              <div class="metric">
+                <div class="metric-num">10+</div>
+                <div class="metric-label">業界の知見（例）</div>
+              </div>
+              <div class="hero-card-note">
+                ※数値はサンプルです。実績に合わせて差し替えてください。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">事業内容</h2>
+            <p class="section-lead">課題に合わせて、最適な進め方と体制を設計します。</p>
+          </div>
+
+          <div class="cards grid-3">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">01</div>
+              <h3 class="card-title">Web / 業務システム開発</h3>
+              <p class="card-text">
+                フロントエンド〜バックエンド、インフラまで一気通貫。保守性の高い設計で、拡張に強い基盤を作ります。
+              </p>
+              <ul class="card-list">
+                <li>要件定義・設計</li>
+                <li>実装・テスト</li>
+                <li>運用保守・改善</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">02</div>
+              <h3 class="card-title">DX支援 / 業務改善</h3>
+              <p class="card-text">
+                現場ヒアリングから業務フローを可視化。小さく始めて大きく育てるロードマップで、確実に成果を積み上げます。
+              </p>
+              <ul class="card-list">
+                <li>業務整理・標準化</li>
+                <li>ツール選定・導入</li>
+                <li>KPI設計・定着化</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">03</div>
+              <h3 class="card-title">インフラ / セキュリティ</h3>
+              <p class="card-text">
+                監視・障害対応・脆弱性対策まで。安心して任せられる運用体制を構築し、事業継続を支えます。
+              </p>
+              <ul class="card-list">
+                <li>クラウド設計・構築</li>
+                <li>監視・SRE支援</li>
+                <li>セキュリティ設計</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <div class="split">
+            <div>
+              <h2 class="section-title">私たちについて</h2>
+              <p class="section-lead">
+                「技術で、現場が楽になる」だけで終わらせない。成果に責任を持つ、伴走型の支援を大切にしています。
+              </p>
+              <div class="values">
+                <div class="value">
+                  <h3 class="value-title">Mission</h3>
+                  <p class="value-text">信頼できる仕組みで、事業の意思決定を速くする。</p>
+                </div>
+                <div class="value">
+                  <h3 class="value-title">Vision</h3>
+                  <p class="value-text">現場と経営が同じ数字を見て動ける世界へ。</p>
+                </div>
+                <div class="value">
+                  <h3 class="value-title">Value</h3>
+                  <p class="value-text">わかりやすく、誠実に、継続的に改善する。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <dl class="company">
+                <div class="company-row">
+                  <dt>会社名</dt>
+                  <dd>株式会社サンプル</dd>
+                </div>
+                <div class="company-row">
+                  <dt>所在地</dt>
+                  <dd>東京都千代田区（例）</dd>
+                </div>
+                <div class="company-row">
+                  <dt>設立</dt>
+                  <dd>20XX年（例）</dd>
+                </div>
+                <div class="company-row">
+                  <dt>事業内容</dt>
+                  <dd>Web開発 / DX支援 / 運用保守</dd>
+                </div>
+                <div class="company-row">
+                  <dt>対応エリア</dt>
+                  <dd>全国（リモート可）</dd>
+                </div>
+              </dl>
+              <a class="button secondary w-full" href="#contact">資料請求・ご相談</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">実績</h2>
+            <p class="section-lead">守秘義務の範囲で、支援内容の例を掲載します。</p>
+          </div>
+
+          <div class="cards grid-3">
+            <article class="card">
+              <div class="tag-row">
+                <span class="tag">製造</span>
+                <span class="tag">可視化</span>
+              </div>
+              <h3 class="card-title">現場進捗の可視化ダッシュボード</h3>
+              <p class="card-text">
+                紙とExcelの転記を廃止。KPIをリアルタイム化し、報告作業を月30時間削減（例）。
+              </p>
+            </article>
+            <article class="card">
+              <div class="tag-row">
+                <span class="tag">不動産</span>
+                <span class="tag">業務</span>
+              </div>
+              <h3 class="card-title">契約管理システムの刷新</h3>
+              <p class="card-text">
+                権限設計と監査ログを強化。障害件数を大幅に抑え、運用コストを削減（例）。
+              </p>
+            </article>
+            <article class="card">
+              <div class="tag-row">
+                <span class="tag">小売</span>
+                <span class="tag">EC</span>
+              </div>
+              <h3 class="card-title">EC基盤のパフォーマンス改善</h3>
+              <p class="card-text">
+                ボトルネックを特定して段階改善。ピーク時の応答を改善し、機会損失を抑制（例）。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">お知らせ</h2>
+            <p class="section-lead">最新情報・プレスリリース（サンプル）</p>
+          </div>
+
+          <div class="news">
+            <article class="news-item">
+              <time class="news-date" datetime="2026-02-01">2026.02.01</time>
+              <span class="tag">お知らせ</span>
+              <a class="news-link" href="#contact">コーポレートサイトを公開しました</a>
+            </article>
+            <article class="news-item">
+              <time class="news-date" datetime="2026-01-10">2026.01.10</time>
+              <span class="tag">採用</span>
+              <a class="news-link" href="#recruit">エンジニア採用を強化しています</a>
+            </article>
+            <article class="news-item">
+              <time class="news-date" datetime="2025-12-20">2025.12.20</time>
+              <span class="tag">事例</span>
+              <a class="news-link" href="#works">支援事例を追加しました</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="recruit" class="section">
+        <div class="container">
+          <div class="split">
+            <div>
+              <h2 class="section-title">採用情報</h2>
+              <p class="section-lead">
+                小さく速く作り、継続的に改善する。プロダクト・顧客価値に向き合うチームをつくっています。
+              </p>
+              <ul class="check-list">
+                <li>リモートワーク可（例）</li>
+                <li>技術選定から関われる</li>
+                <li>品質と学習を重視</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3 class="panel-title">募集職種（例）</h3>
+              <ul class="panel-list">
+                <li>フルスタックエンジニア</li>
+                <li>インフラ / SRE</li>
+                <li>プロジェクトマネージャー</li>
+              </ul>
+              <a class="button secondary w-full" href="#contact">応募・カジュアル面談</a>
+              <p class="panel-note">※募集内容はサンプルです。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">お問い合わせ</h2>
+            <p class="section-lead">
+              ご相談内容を簡単にお送りください（送信するとメール作成画面が開きます）。
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="panel">
+              <h3 class="panel-title">連絡先</h3>
+              <dl class="contact-dl">
+                <div class="company-row">
+                  <dt>メール</dt>
+                  <dd><a href="mailto:info@example.com">info@example.com</a></dd>
+                </div>
+                <div class="company-row">
+                  <dt>受付</dt>
+                  <dd>平日 10:00-18:00（例）</dd>
+                </div>
+                <div class="company-row">
+                  <dt>所在地</dt>
+                  <dd>東京都千代田区（例）</dd>
+                </div>
+              </dl>
+              <p class="panel-note">
+                ※本ページはテンプレートです。社名・住所・連絡先は実際の情報に置き換えてください。
+              </p>
+            </div>
+
+            <form class="form" data-contact-form>
+              <label class="field">
+                <span class="label">お名前</span>
+                <input name="name" autocomplete="name" required placeholder="山田 太郎" />
+              </label>
+
+              <label class="field">
+                <span class="label">メールアドレス</span>
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="taro@example.com"
+                />
+              </label>
+
+              <label class="field">
+                <span class="label">お問い合わせ内容</span>
+                <textarea name="message" required rows="6" placeholder="ご相談内容をご記入ください"></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="button primary" type="submit">メールで送信</button>
+                <p class="form-note">
+                  送信ボタンでメールアプリが開きます（サーバー送信はしません）。
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="section">
+        <div class="container">
+          <h2 class="section-title">プライバシーポリシー（サンプル）</h2>
+          <div class="prose">
+            <p>
+              株式会社サンプル（以下「当社」）は、お問い合わせにより取得した個人情報を、お問い合わせ対応の目的に限り利用します。
+            </p>
+            <p>
+              取得した個人情報は法令に基づく場合を除き、本人の同意なく第三者へ提供しません。安全管理のため、適切な措置を講じます。
+            </p>
+            <p class="muted">※本文は雛形です。実運用に合わせて法務確認のうえ改定してください。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <img class="brand-mark" src="/assets/logo.svg" width="28" height="28" alt="" />
+            <span class="brand-name">株式会社サンプル</span>
+          </a>
+          <p class="footer-text">信頼で事業を支える、伴走型のテクノロジーパートナー。</p>
+        </div>
+
+        <div class="footer-links" aria-label="フッターリンク">
+          <a href="#about">会社概要</a>
+          <a href="#services">事業内容</a>
+          <a href="#works">実績</a>
+          <a href="#news">お知らせ</a>
+          <a href="#recruit">採用</a>
+          <a href="#contact">お問い合わせ</a>
+          <a href="#privacy">プライバシーポリシー</a>
+        </div>
+
+        <div class="footer-meta">
+          <p class="muted">© <span data-year></span> Sample Inc.</p>
+          <p class="muted">Built as a lightweight static site.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/main.js" defer></script>
+  </body>
+</html>

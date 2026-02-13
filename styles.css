@@ -1,12 +1,12 @@
 :root {
   --bg: #ffffff;
-  --bg-alt: #f5f8fc;
-  --text: #1d2939;
-  --muted: #526071;
-  --primary: #1f6feb;
-  --primary-dark: #1656b3;
-  --border: #d0d7e2;
-  --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --bg-alt: #f2f6ff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #1d4ed8;
+  --primary-dark: #1e3a8a;
+  --border: #d8e1f2;
+  --shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
   --radius: 14px;
 }
 
@@ -58,8 +58,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid var(--border);
+  background: rgba(9, 18, 44, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(8px);
 }
 
@@ -75,6 +75,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.05em;
   font-size: 1.05rem;
+  color: #ffffff;
 }
 
 .global-nav ul {
@@ -88,16 +89,16 @@ a {
 
 .global-nav a {
   font-size: 0.95rem;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .global-nav a[aria-current="page"] {
-  color: var(--primary);
+  color: #ffffff;
   font-weight: 700;
 }
 
 .global-nav a:hover {
-  color: var(--primary);
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -113,12 +114,16 @@ a {
   width: 24px;
   height: 2px;
   margin: 5px 0;
-  background: var(--text);
+  background: #ffffff;
 }
 
 .hero {
-  padding: 5rem 0 4rem;
-  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  padding: 6rem 0 4.5rem;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.35) 0%, rgba(59, 130, 246, 0) 42%),
+    radial-gradient(circle at 90% 10%, rgba(29, 78, 216, 0.45) 0%, rgba(29, 78, 216, 0) 45%),
+    linear-gradient(135deg, #020617 0%, #0b1f63 55%, #1d4ed8 100%);
+  color: #ffffff;
 }
 
 .hero-grid {
@@ -130,8 +135,9 @@ a {
 
 .eyebrow {
   margin: 0 0 0.8rem;
-  color: var(--primary);
+  color: #bfdbfe;
   font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 h1 {
@@ -141,7 +147,7 @@ h1 {
 }
 
 .lead {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.88);
   margin-top: 1rem;
   max-width: 58ch;
 }
@@ -173,14 +179,15 @@ h1 {
 }
 
 .btn-secondary {
-  border-color: var(--border);
-  color: var(--text);
-  background: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+  background: rgba(15, 23, 42, 0.16);
 }
 
 .btn-secondary:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: #ffffff;
+  color: #ffffff;
+  background: rgba(15, 23, 42, 0.3);
 }
 
 .stats {
@@ -189,24 +196,25 @@ h1 {
 }
 
 .stats article {
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--radius);
   padding: 1rem 1.2rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 24px rgba(2, 6, 23, 0.24);
+  backdrop-filter: blur(4px);
 }
 
 .stat-number {
   margin: 0;
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #ffffff;
   line-height: 1.2;
 }
 
 .stat-label {
   margin: 0.25rem 0 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .section {
@@ -256,6 +264,44 @@ h2 {
   color: var(--muted);
 }
 
+.chip-list {
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip-list li {
+  border: 1px solid #c7d8ff;
+  background: #edf3ff;
+  color: #1e3a8a;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.24rem 0.58rem;
+}
+
+.mission-grid .card {
+  border-top: 3px solid var(--primary);
+}
+
+.recruit-highlight {
+  margin-top: 1.4rem;
+  border: 1px solid #bfd1ff;
+  background: linear-gradient(120deg, #edf4ff 0%, #ffffff 100%);
+}
+
+.recruit-highlight .stat-number {
+  color: var(--primary-dark);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.recruit-highlight .stat-label {
+  color: var(--muted);
+}
+
 .company-table-wrap {
   margin-top: 1.3rem;
   border: 1px solid var(--border);
@@ -288,24 +334,9 @@ h2 {
   border-bottom: 0;
 }
 
-.news-list {
-  list-style: none;
-  margin: 1.3rem 0 0;
-  padding: 0;
-  border-top: 1px solid var(--border);
-}
-
-.news-list li {
-  display: grid;
-  grid-template-columns: 130px 1fr;
-  gap: 1rem;
-  padding: 0.9rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.news-list time {
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
+.company-table a {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 .contact-panel {
@@ -355,14 +386,10 @@ h2 {
   font-weight: 600;
 }
 
-.recruit-action {
-  margin-top: 1.2rem;
-}
-
 .site-footer {
-  border-top: 1px solid var(--border);
-  background: #fff;
-  padding: 1.3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  background: #09122c;
+  padding: 1.4rem 0;
 }
 
 .footer-inner {
@@ -375,15 +402,21 @@ h2 {
 
 .footer-inner p {
   margin: 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .footer-inner a {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .footer-inner a:hover {
-  color: var(--primary);
+  color: #ffffff;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.95rem;
 }
 
 .back-to-top {
@@ -456,9 +489,16 @@ h2 {
     gap: 0.8rem;
   }
 
-  .news-list li {
-    grid-template-columns: 1fr;
-    gap: 0.3rem;
+  .global-nav a {
+    color: var(--text);
+  }
+
+  .global-nav a[aria-current="page"] {
+    color: var(--primary);
+  }
+
+  .global-nav a:hover {
+    color: var(--primary);
   }
 
   .company-table th,

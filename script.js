@@ -21,6 +21,7 @@ if (menuToggle && globalNav) {
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "メニューを開く");
       globalNav.classList.remove("is-open");
     });
   });
@@ -33,6 +34,7 @@ if (menuToggle && globalNav) {
 
     if (!globalNav.contains(target) && !menuToggle.contains(target)) {
       menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "メニューを開く");
       globalNav.classList.remove("is-open");
     }
   });
@@ -50,7 +52,7 @@ if (contactForm instanceof HTMLFormElement && formMessage) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
     formMessage.textContent =
-      "お問い合わせありがとうございます。内容を確認のうえ、2営業日以内に担当者よりご連絡します。";
+      "お問い合わせありがとうございます。内容を確認のうえ、担当者よりご連絡いたします。";
     formMessage.hidden = false;
     contactForm.reset();
   });

@@ -130,6 +130,16 @@ a {
   color: #d4e2f4;
 }
 
+.hero-points {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  color: #d8e8ff;
+}
+
+.hero-points li + li {
+  margin-top: 0.35rem;
+}
+
 .hero-actions {
   margin-top: 1.4rem;
   display: flex;
@@ -254,6 +264,66 @@ h2 {
   margin-right: 0.2rem;
 }
 
+.process-cards {
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.process-cards li strong {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 0.4rem;
+}
+
+.process-cards li p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tag-list {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.tag-list li {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.87rem;
+  color: #314666;
+}
+
+.faq-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.faq-list details {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.8rem 0.95rem;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.faq-list p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+}
+
 .company-table {
   width: 100%;
   border-collapse: collapse;
@@ -303,7 +373,8 @@ h2 {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   width: 100%;
   margin-top: 0.35rem;
   border: 1px solid var(--border);
@@ -313,7 +384,8 @@ h2 {
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
   outline: 2px solid rgba(31, 111, 255, 0.25);
   border-color: var(--primary);
 }
@@ -342,7 +414,8 @@ h2 {
   .hero-stats,
   .grid-3,
   .grid-2,
-  .contact-wrap {
+  .contact-wrap,
+  .process-cards {
     grid-template-columns: 1fr;
   }
 }

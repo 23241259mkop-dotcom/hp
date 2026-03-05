@@ -2,6 +2,8 @@ const menuToggle = document.querySelector(".menu-toggle");
 const globalNav = document.querySelector(".global-nav");
 const navLinks = document.querySelectorAll(".global-nav a");
 const currentYear = document.getElementById("current-year");
+const revealElements = document.querySelectorAll(".reveal");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (currentYear) {
   currentYear.textContent = String(new Date().getFullYear());
@@ -35,4 +37,39 @@ if (menuToggle && globalNav) {
       closeMenu();
     }
   });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      closeMenu();
+    }
+  });
+}
+
+if (revealElements.length > 0) {
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    revealElements.forEach((element) => {
+      element.classList.add("is-visible");
+    });
+  } else {
+    const observer = new IntersectionObserver(
+      (entries, currentObserver) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          entry.target.classList.add("is-visible");
+          currentObserver.unobserve(entry.target);
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: "0px 0px -8% 0px",
+      }
+    );
+
+    revealElements.forEach((element, index) => {
+      element.style.transitionDelay = `${(index % 5) * 70}ms`;
+      observer.observe(element);
+    });
+  }
 }

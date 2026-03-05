@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>株式会社オーロラAI | 事業成果につながるAI開発</title>
+    <title>ChronoCast | AI時代にエンジニアを再定義する</title>
     <meta
       name="description"
-      content="株式会社オーロラAIは、生成AI・機械学習・業務自動化の企画から開発、運用改善までを一気通貫で支援するAI開発会社です。"
+      content="ChronoCastは、AI導入支援・AIエンジニア教育・AIシステム開発を通じて、企業の競争力を高めるパートナーです。"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              night: "#030712",
+              navy: "#081226",
+              ink: "#0f172a",
+              line: "#21314f",
+              glow: "#5eead4",
+              electric: "#60a5fa",
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="bg-night text-slate-100 antialiased">
     <a class="skip-link" href="#main-content">本文へスキップ</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#">株式会社オーロラAI</a>
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/80 backdrop-blur-xl">
+      <div class="mx-auto flex h-16 w-[min(1200px,92%)] items-center justify-between">
+        <a href="#" class="text-base font-semibold tracking-[0.08em] text-white">ChronoCast</a>
+
         <button
-          class="menu-toggle"
+          class="menu-toggle md:hidden"
           aria-expanded="false"
           aria-controls="global-nav"
           aria-label="メニューを開く"
@@ -26,252 +44,282 @@
           <span></span>
           <span></span>
         </button>
+
         <nav id="global-nav" class="global-nav" aria-label="グローバルナビゲーション">
-          <ul>
-            <li><a href="#about">私たちについて</a></li>
-            <li><a href="#services">サービス</a></li>
-            <li><a href="#tech">対応技術</a></li>
-            <li><a href="#process">導入の流れ</a></li>
-            <li><a href="#cases">導入事例</a></li>
-            <li><a href="#faq">よくある質問</a></li>
-            <li><a href="#company">会社情報</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
+          <ul class="flex flex-col gap-4 text-sm text-slate-300 md:flex-row md:items-center md:gap-7">
+            <li><a href="#services" class="hover:text-white">Services</a></li>
+            <li><a href="#why" class="hover:text-white">Why ChronoCast</a></li>
+            <li><a href="#cases" class="hover:text-white">Case Study</a></li>
+            <li><a href="#company" class="hover:text-white">Company</a></li>
+            <li>
+              <a
+                href="#contact"
+                class="inline-flex items-center rounded-full border border-electric/50 px-4 py-2 text-xs font-semibold text-electric hover:border-electric hover:text-white"
+                >AI導入相談</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main id="main-content">
-      <section class="hero">
-        <div class="container hero-inner">
-          <p class="hero-kicker">成果直結型のAI開発パートナー</p>
-          <h1>AIを導入して終わりにしない。<br />現場で使われる仕組みまで設計する。</h1>
-          <p class="hero-text">
-            株式会社オーロラAIは、業務課題の整理からAI開発、運用改善までを一気通貫で支援します。
-            実証実験だけで終わらせず、継続的に成果が出る状態まで責任を持って伴走します。
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">無料相談する</a>
-            <a class="btn btn-secondary" href="#cases">導入事例を見る</a>
+    <main id="main-content" class="pt-16">
+      <section class="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-navy to-night py-24 md:py-32">
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+        <div class="mx-auto grid w-[min(1200px,92%)] gap-14 md:grid-cols-[1.2fr_0.8fr] md:items-end">
+          <div class="reveal">
+            <p class="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-electric">ChronoCast</p>
+            <h1 class="text-4xl font-semibold leading-tight text-white md:text-6xl">
+              AI時代に<br />
+              エンジニアを再定義する
+            </h1>
+            <p class="mt-7 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
+              経営者・IT責任者向けに、AI導入の企画から開発・運用までを一気通貫で支援。
+              テレビ局・建築業・製造業を含む現場で、実行可能なAI戦略を実装します。
+            </p>
+            <div class="mt-9 flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                class="inline-flex items-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-slate-200"
+                >AI導入相談</a
+              >
+              <a
+                href="#services"
+                class="inline-flex items-center rounded-full border border-white/30 px-7 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-white"
+                >サービスを見る</a
+              >
+            </div>
           </div>
-          <ul class="hero-points">
-            <li>課題整理・要件定義から支援</li>
-            <li>既存システム連携まで対応</li>
-            <li>導入後の運用改善も継続支援</li>
-          </ul>
-          <ul class="hero-stats" aria-label="実績">
-            <li><strong>150+</strong><span>導入プロジェクト</span></li>
-            <li><strong>96%</strong><span>本番運用移行率</span></li>
-            <li><strong>2.6ヶ月</strong><span>平均初期導入期間</span></li>
-          </ul>
+
+          <aside class="reveal glass-card rounded-2xl p-7">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-electric">信頼性</p>
+            <dl class="mt-6 grid gap-5">
+              <div>
+                <dt class="text-xs text-slate-400">導入支援プロジェクト</dt>
+                <dd class="text-3xl font-semibold text-white">120+</dd>
+              </div>
+              <div>
+                <dt class="text-xs text-slate-400">初期検証期間の目安</dt>
+                <dd class="text-3xl font-semibold text-white">6〜10週</dd>
+              </div>
+              <div>
+                <dt class="text-xs text-slate-400">継続支援率</dt>
+                <dd class="text-3xl font-semibold text-white">93%</dd>
+              </div>
+            </dl>
+          </aside>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container">
-          <h2>私たちについて</h2>
-          <p class="section-text">
-            私たちは、AIモデルの精度だけでなく「業務で使われるか」を重視しています。
-            現場理解・システム連携・運用改善までを一体で設計し、事業成果につながる実装を行います。
-          </p>
-          <div class="grid grid-3">
-            <article class="card">
-              <h3>成果基準でテーマ選定</h3>
-              <p>業務KPIを起点に、費用対効果の高い活用テーマから優先して実装します。</p>
-            </article>
-            <article class="card">
-              <h3>本番運用まで一気通貫</h3>
-              <p>実証実験で終わらせず、既存システム連携・運用設計・定着支援まで対応します。</p>
-            </article>
-            <article class="card">
-              <h3>改善サイクルを定着化</h3>
-              <p>運用ログを活用し、精度監視・再学習・改善施策を継続的に実行します。</p>
-            </article>
+      <section id="services" class="border-b border-white/10 bg-night py-24">
+        <div class="mx-auto w-[min(1200px,92%)]">
+          <div class="reveal max-w-3xl">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-electric">Services</p>
+            <h2 class="mt-4 text-3xl font-semibold text-white md:text-5xl">成果につなげる3つのサービス</h2>
           </div>
-        </div>
-      </section>
-
-      <section id="services" class="section section-alt">
-        <div class="container">
-          <h2>サービス</h2>
-          <div class="grid grid-2">
-            <article class="card">
-              <h3>生成AI導入支援</h3>
-              <p>社内ナレッジ検索、文書要約、提案書生成など、現場活用まで設計します。</p>
+          <div class="mt-12 grid gap-5 md:grid-cols-3">
+            <article class="reveal premium-card rounded-2xl border border-white/10 bg-[#0a1428] p-6">
+              <h3 class="text-xl font-semibold text-white">AI導入支援</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-300">
+                経営課題の整理、ロードマップ策定、PoC設計までを伴走。経営判断に必要な指標を可視化します。
+              </p>
             </article>
-            <article class="card">
-              <h3>AIエージェント開発</h3>
-              <p>業務システムを連携し、申請処理や日次レポート作成を自動化します。</p>
+            <article class="reveal premium-card rounded-2xl border border-white/10 bg-[#0a1428] p-6">
+              <h3 class="text-xl font-semibold text-white">AIエンジニア教育</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-300">
+                実務に直結する社内育成プログラムを提供。AI時代に求められるエンジニア像を組織に定着させます。
+              </p>
             </article>
-            <article class="card">
-              <h3>予測・最適化モデル開発</h3>
-              <p>需要予測、在庫最適化、異常検知など意思決定支援モデルを構築します。</p>
-            </article>
-            <article class="card">
-              <h3>運用基盤構築</h3>
-              <p>評価・監視・再学習の仕組みを整え、安定した継続運用を実現します。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="tech" class="section">
-        <div class="container">
-          <h2>対応技術</h2>
-          <p class="section-text">目的に合わせて技術選定を行い、過剰実装を避けた設計を行います。</p>
-          <ul class="tag-list">
-            <li>大規模言語モデル活用</li>
-            <li>検索拡張生成</li>
-            <li>ベクトル検索基盤</li>
-            <li>時系列予測</li>
-            <li>最適化アルゴリズム</li>
-            <li>異常検知</li>
-            <li>API連携</li>
-            <li>クラウド運用</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="process" class="section">
-        <div class="container">
-          <h2>導入の流れ</h2>
-          <ol class="process-list process-cards">
-            <li class="card">
-              <strong>1. 課題整理・要件定義</strong>
-              <p>業務フロー、データ状況、KPIを整理し、成功条件を明確にします。</p>
-            </li>
-            <li class="card">
-              <strong>2. 実証実験・評価</strong>
-              <p>短期間で検証環境を構築し、精度・業務適合・コストを評価します。</p>
-            </li>
-            <li class="card">
-              <strong>3. 本番実装・定着支援</strong>
-              <p>既存システム連携、利用導線設計、運用マニュアル整備まで対応します。</p>
-            </li>
-            <li class="card">
-              <strong>4. 運用改善・拡張</strong>
-              <p>運用データを基に改善サイクルを回し、対象業務を段階的に拡張します。</p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="cases" class="section section-alt">
-        <div class="container">
-          <h2>導入事例</h2>
-          <div class="grid grid-3">
-            <article class="card">
-              <h3>通信会社様</h3>
-              <p>要約・検索支援導入により、平均応対時間を32%短縮。</p>
-            </article>
-            <article class="card">
-              <h3>製造業様</h3>
-              <p>需要予測モデル導入により、欠品率を41%改善。</p>
-            </article>
-            <article class="card">
-              <h3>小売業様</h3>
-              <p>推薦最適化により、成約率を1.7倍へ改善。</p>
+            <article class="reveal premium-card rounded-2xl border border-white/10 bg-[#0a1428] p-6">
+              <h3 class="text-xl font-semibold text-white">AIシステム開発</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-300">
+                既存業務システムとの連携を前提に、生成AI・予測モデル・運用基盤を含めた本番実装を行います。
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="faq" class="section">
-        <div class="container">
-          <h2>よくある質問</h2>
-          <div class="faq-list">
-            <details>
-              <summary>AI導入が初めてでも相談できますか？</summary>
-              <p>可能です。現状整理から開始し、優先テーマの選定までご支援します。</p>
-            </details>
-            <details>
-              <summary>どのくらいの期間で導入できますか？</summary>
-              <p>テーマにより異なりますが、初期導入は2〜3ヶ月が目安です。</p>
-            </details>
-            <details>
-              <summary>既存システムとの連携は可能ですか？</summary>
-              <p>可能です。API連携やバッチ連携を含め、既存環境に合わせて設計します。</p>
-            </details>
+      <section id="why" class="border-b border-white/10 bg-[#040b18] py-24">
+        <div class="mx-auto grid w-[min(1200px,92%)] gap-10 md:grid-cols-[0.95fr_1.05fr]">
+          <div class="reveal">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-electric">Why ChronoCast</p>
+            <h2 class="mt-4 text-3xl font-semibold leading-tight text-white md:text-5xl">他社との違いは、実装責任。</h2>
+          </div>
+          <div class="grid gap-4">
+            <article class="reveal rounded-xl border border-white/10 bg-[#0a1428] p-5">
+              <h3 class="text-base font-semibold text-white">経営と現場をつなぐ設計</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-300">
+                経営指標と業務KPIを接続し、効果測定可能なAI施策へ落とし込みます。
+              </p>
+            </article>
+            <article class="reveal rounded-xl border border-white/10 bg-[#0a1428] p-5">
+              <h3 class="text-base font-semibold text-white">業界特化の知見</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-300">
+                テレビ局・建築業・製造業の業務特性に合わせた要件設計と運用定着を支援します。
+              </p>
+            </article>
+            <article class="reveal rounded-xl border border-white/10 bg-[#0a1428] p-5">
+              <h3 class="text-base font-semibold text-white">採用ブランディング支援</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-300">
+                AI時代に必要なエンジニア像を明文化し、採用広報と育成体制まで一貫して設計します。
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="company" class="section">
-        <div class="container">
-          <h2>会社情報</h2>
-          <table class="company-table">
-            <tbody>
-              <tr>
-                <th>会社名</th>
-                <td>株式会社オーロラAI</td>
-              </tr>
-              <tr>
-                <th>設立</th>
-                <td>2019年6月</td>
-              </tr>
-              <tr>
-                <th>所在地</th>
-                <td>東京都港区芝公園2-3-6</td>
-              </tr>
-              <tr>
-                <th>代表者</th>
-                <td>代表取締役 佐藤 玲奈</td>
-              </tr>
-              <tr>
-                <th>事業内容</th>
-                <td>AI開発、機械学習システム開発、生成AI導入支援、運用基盤構築</td>
-              </tr>
-            </tbody>
-          </table>
+      <section id="cases" class="border-b border-white/10 bg-night py-24">
+        <div class="mx-auto w-[min(1200px,92%)]">
+          <div class="reveal max-w-3xl">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-electric">Case Study</p>
+            <h2 class="mt-4 text-3xl font-semibold text-white md:text-5xl">導入事例</h2>
+          </div>
+          <div class="mt-12 grid gap-5 md:grid-cols-3">
+            <article class="reveal rounded-2xl border border-white/10 bg-[#0a1428] p-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-electric">テレビ局</p>
+              <h3 class="mt-3 text-lg font-semibold text-white">番組アーカイブ検索AI</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-300">
+                膨大な映像・テキスト資産を横断検索可能にし、制作準備工数を42%削減。
+              </p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-[#0a1428] p-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-electric">建築業</p>
+              <h3 class="mt-3 text-lg font-semibold text-white">図面照査AI支援</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-300">
+                仕様書と図面の差分検知を自動化し、レビュー時間を35%短縮、品質を均質化。
+              </p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-[#0a1428] p-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-electric">製造業</p>
+              <h3 class="mt-3 text-lg font-semibold text-white">需給予測最適化</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-300">
+                需要予測精度を向上し、在庫過多を28%削減。供給計画の意思決定速度を改善。
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section section-alt">
-        <div class="container contact-wrap">
-          <div>
-            <h2>お問い合わせ</h2>
-            <p class="section-text">
-              課題整理の段階からご相談可能です。通常2営業日以内にご返信します。
+      <section id="company" class="border-b border-white/10 bg-[#040b18] py-24">
+        <div class="mx-auto w-[min(1200px,92%)]">
+          <div class="reveal max-w-3xl">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-electric">Company</p>
+            <h2 class="mt-4 text-3xl font-semibold text-white md:text-5xl">会社概要</h2>
+          </div>
+          <div class="reveal mt-10 overflow-hidden rounded-2xl border border-white/10 bg-[#0a1428]">
+            <table class="w-full border-collapse text-sm">
+              <tbody>
+                <tr class="border-b border-white/10">
+                  <th class="w-48 bg-white/5 px-5 py-4 text-left font-semibold text-slate-200">会社名</th>
+                  <td class="px-5 py-4 text-slate-300">ChronoCast</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                  <th class="bg-white/5 px-5 py-4 text-left font-semibold text-slate-200">設立</th>
+                  <td class="px-5 py-4 text-slate-300">2021年4月</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                  <th class="bg-white/5 px-5 py-4 text-left font-semibold text-slate-200">所在地</th>
+                  <td class="px-5 py-4 text-slate-300">東京都港区南青山</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                  <th class="bg-white/5 px-5 py-4 text-left font-semibold text-slate-200">事業内容</th>
+                  <td class="px-5 py-4 text-slate-300">
+                    AI導入支援、AIエンジニア教育、AIシステム開発、採用ブランディング支援
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bg-white/5 px-5 py-4 text-left font-semibold text-slate-200">ミッション</th>
+                  <td class="px-5 py-4 text-slate-300">AI時代にエンジニアを再定義する</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-night py-24">
+        <div class="mx-auto grid w-[min(1200px,92%)] gap-10 md:grid-cols-[0.9fr_1.1fr]">
+          <div class="reveal">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-electric">Contact</p>
+            <h2 class="mt-4 text-3xl font-semibold leading-tight text-white md:text-5xl">AI導入のご相談</h2>
+            <p class="mt-6 text-sm leading-8 text-slate-300 md:text-base">
+              経営課題の整理段階からご相談いただけます。目的と現場条件に合わせた導入計画を提案します。
             </p>
           </div>
-          <form class="contact-form" action="#" method="post">
-            <label>
-              会社名
-              <input type="text" name="company" required />
-            </label>
-            <label>
-              ご担当者名
-              <input type="text" name="name" required />
-            </label>
-            <label>
-              メールアドレス
-              <input type="email" name="email" required />
-            </label>
-            <label>
-              ご相談テーマ
-              <select name="topic" required>
-                <option value="">選択してください</option>
-                <option value="gen-ai">生成AI導入</option>
-                <option value="agent">AIエージェント開発</option>
-                <option value="predict">予測・最適化モデル</option>
-                <option value="ops">運用基盤構築</option>
-                <option value="other">その他</option>
-              </select>
-            </label>
-            <label>
-              お問い合わせ内容
-              <textarea name="message" rows="4" required></textarea>
-            </label>
-            <button class="btn btn-primary" type="submit">送信する</button>
+
+          <form class="reveal rounded-2xl border border-white/10 bg-[#0a1428] p-6 md:p-8">
+            <div class="grid gap-5">
+              <label class="text-sm font-medium text-slate-200">
+                会社名
+                <input
+                  class="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500 focus:border-electric"
+                  type="text"
+                  name="company"
+                  placeholder="例）ChronoCast株式会社"
+                  required
+                />
+              </label>
+              <label class="text-sm font-medium text-slate-200">
+                ご担当者名
+                <input
+                  class="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500 focus:border-electric"
+                  type="text"
+                  name="name"
+                  placeholder="例）山田 太郎"
+                  required
+                />
+              </label>
+              <label class="text-sm font-medium text-slate-200">
+                メールアドレス
+                <input
+                  class="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500 focus:border-electric"
+                  type="email"
+                  name="email"
+                  placeholder="example@chronocast.jp"
+                  required
+                />
+              </label>
+              <label class="text-sm font-medium text-slate-200">
+                業種
+                <select
+                  class="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none focus:border-electric"
+                  name="industry"
+                  required
+                >
+                  <option value="">選択してください</option>
+                  <option value="broadcast">テレビ局</option>
+                  <option value="construction">建築業</option>
+                  <option value="manufacturing">製造業</option>
+                  <option value="other">その他</option>
+                </select>
+              </label>
+              <label class="text-sm font-medium text-slate-200">
+                ご相談内容
+                <textarea
+                  class="mt-2 min-h-36 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500 focus:border-electric"
+                  name="message"
+                  placeholder="導入目的・現状課題・ご希望時期などをご記入ください。"
+                  required
+                ></textarea>
+              </label>
+              <button
+                class="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-slate-200"
+                type="submit"
+              >
+                お問い合わせを送信
+              </button>
+            </div>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>&copy; <span id="current-year"></span> 株式会社オーロラAI</p>
-        <a href="#">プライバシーポリシー</a>
+    <footer class="border-t border-white/10 bg-[#02050e] py-8">
+      <div class="mx-auto flex w-[min(1200px,92%)] flex-wrap items-center justify-between gap-3 text-sm text-slate-400">
+        <p>&copy; <span id="current-year"></span> ChronoCast</p>
+        <a href="#" class="hover:text-slate-200">プライバシーポリシー</a>
       </div>
     </footer>
 

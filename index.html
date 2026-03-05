@@ -32,7 +32,10 @@
 
     <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/80 backdrop-blur-xl">
       <div class="mx-auto flex h-16 w-[min(1200px,92%)] items-center justify-between">
-        <a href="#" class="text-base font-semibold tracking-[0.08em] text-white">ChronoCast</a>
+        <a href="#" class="inline-flex items-center gap-3 text-base font-semibold tracking-[0.08em] text-white">
+          <img src="assets/chronocast-logo.svg" alt="ChronoCast ロゴ" class="h-8 w-8 object-contain" />
+          <span>ChronoCast</span>
+        </a>
 
         <button
           class="menu-toggle md:hidden"
@@ -318,7 +321,10 @@
 
     <footer class="border-t border-white/10 bg-[#02050e] py-8">
       <div class="mx-auto flex w-[min(1200px,92%)] flex-wrap items-center justify-between gap-3 text-sm text-slate-400">
-        <p>&copy; <span id="current-year"></span> ChronoCast</p>
+        <p class="inline-flex items-center gap-2">
+          <img src="assets/chronocast-logo.svg" alt="" class="h-5 w-5 object-contain opacity-80" />
+          <span>&copy; <span id="current-year"></span> ChronoCast</span>
+        </p>
         <a href="#" class="hover:text-slate-200">プライバシーポリシー</a>
       </div>
     </footer>

@@ -1,0 +1,6 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ChronoCast logo">
+  <path d="M170 36C154 22 133 14 110 14C57 14 14 57 14 110C14 163 57 206 110 206C133 206 154 198 170 184" stroke="#1E4AA8" stroke-width="13"/>
+  <path d="M162 52C149 40 130 32 110 32C67 32 32 67 32 110C32 153 67 188 110 188C130 188 149 180 162 168" stroke="#1E4AA8" stroke-width="11"/>
+  <path d="M112 70C123 70 133 74 141 81H169V69C154 53 133 44 110 44" fill="#1E4AA8"/>
+  <path d="M141 139C133 146 123 150 112 150H110C134 150 156 141 171 124V112H141V139Z" fill="#1E4AA8"/>
+</svg>
